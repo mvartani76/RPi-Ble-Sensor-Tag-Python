@@ -48,7 +48,29 @@ make
 make install
 </code></pre>
 
-Need to copy gatttool manually into the /usr/local/bin dir
+Need to copy gatttool manually into the <b>/usr/local/bin/</b> dir
 
 <pre class="code-text-only" style="display: none;">
 <code>cp attrib/gatttool /usr/local/bin/</code></pre>
+
+Get the Code from GitHub
+========================
+<pre class="code-text-only" style="display: none;">
+<code>sudo git clone https://github.com/mvartani76/RPi-Ble-Sensor-Tag-Python/</code></pre>
+
+
+Run the Code
+============
+Find the BD_ADDR of the low energy device with the following command
+<pre class="code-text-only" style="display: none;">
+<code>sudo hcitool lescan</code></pre>
+
+This tool does not stop so you will need to manually stop it (CTRL-C) after you find your BD_ADDR.
+
+<b>sensortag.py</b> - this code prints out all data from the TI sensortag
+<pre class="code-text-only" style="display: none;">
+<code>sudo python sensortag.py BD_ADDR</code></pre>
+
+<b>sensortag_test.py</b> - this code just prints out the temperature data from the TI sensortag
+<pre class="code-text-only" style="display: none;">
+<code>sudo python sensortag_test.py BD_ADDR</code></pre>
