@@ -20,8 +20,8 @@ sudo apt-get upgrade
 sudo apt-get install cmake
 sudo apt-get install automake
 sudo apt-get install libusb-dev
-sudo apt-get libdbus-1-dev
-sudo apt-get libudev-devlibical-dev libreadline-dev
+sudo apt-get install libdbus-1-dev
+sudo apt-get install libudev-devlibical-dev libreadline-dev
 sudo apt-get install libglib2.0
 sudo apt-get install libglib2.0-dev
 sudo apt-get install bluetooth
