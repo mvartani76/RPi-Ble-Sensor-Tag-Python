@@ -21,7 +21,7 @@ sudo apt-get install cmake
 sudo apt-get install automake
 sudo apt-get install libusb-dev
 sudo apt-get install libdbus-1-dev
-sudo apt-get install libudev-devlibical-dev libreadline-dev
+sudo apt-get install libudev-dev libical-dev libreadline-dev
 sudo apt-get install libglib2.0
 sudo apt-get install libglib2.0-dev
 sudo apt-get install bluetooth
@@ -32,6 +32,10 @@ sudo apt-get install bluez-hcidump
 Get the latest version of BlueZ
 ===============================
 Download the latest version of BlueZ from <b>www.bluez.org</b>. I downloaded <b>release5.11 (bluez-5.11.tar.xz)</b> to my PC and copied it over to the /home/pi direcotry on my Pi.<br>
+
+Or you can use wget
+<pre class="code-text-only" style="display: none;">
+<code>wget http://www.kernel.org/pub/linux/bluetooth/bluez-5.11.tar.gz</code></pre>
 
 Extract the BlueZ tar file with the following command
 
